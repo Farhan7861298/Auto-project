@@ -4,50 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoBot Project</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            padding: 15px;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #darkModeToggle {
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to AutoBot</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to AutoBot Project</h1>
+        <button id="darkModeToggle">Dark Mode</button>
     </header>
-    
-    <section id="home">
-        <h2>Automate Everything with AutoBot</h2>
-        <p>Experience the next level of automation with our AI-powered system.</p>
-    </section>
-    
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>AI-based Website Creation</li>
-            <li>Automatic APK Generation</li>
-            <li>Voice Command Execution</li>
-            <li>Advanced Security & Auto Deployment</li>
-        </ul>
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We provide cutting-edge AI solutions to automate your digital tasks.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@autobot.com</p>
-        <p>Phone: +123 456 7890</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 AutoBot. All rights reserved.</p>
-    </footer>
+    <main>
+        <p>This is the advanced version of AutoBot.</p>
+        <button id="aiButton">Ask AutoBot AI</button>
+    </main>
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>
